@@ -47,3 +47,7 @@ devboard/
 │ └── docker.yml
 │
 └── README.md
+
+## CI/CD Pipeline
+- GitHub Actions automatically builds and pushes Docker image on every push to main
+- Deployed on Render with automatic redeploys
