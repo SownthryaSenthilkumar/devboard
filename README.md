@@ -1,26 +1,49 @@
 # DevBoard - Task Management API
 
 ## Overview
-This is a FastAPI-based backend application for managing tasks.
+DevBoard is a RESTful Task Management API built using FastAPI.  
+It provides basic CRUD operations for managing tasks and demonstrates backend development, containerization, and deployment practices.
 
-## Features
-- Add tasks
-- View tasks
-- Update tasks
-- Delete tasks
+---
+
+## Live Demo
+API Base URL:  
+https://devboard-ngmt.onrender.com  
+
+API Documentation (Swagger UI):  
+https://devboard-ngmt.onrender.com/docs  
+
+---
 
 ## Tech Stack
-- Python (FastAPI)
+- Python
+- FastAPI
+- Uvicorn
 - Docker
-- GitHub Actions
+- Render (Cloud Deployment)
+- GitHub Actions (CI/CD)
 
-## Run Locally
+---
 
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-uvicorn main:app --reload
+## Features
+- Create tasks
+- Retrieve all tasks
+- Update tasks
+- Delete tasks
+- Interactive API documentation via Swagger UI
 
-## API Docs
-http://127.0.0.1:8000/docs
+---
+
+## Project Structure
+
+devboard/
+│
+├── backend/
+│ ├── main.py
+│ ├── requirements.txt
+│ └── Dockerfile
+│
+├── .github/workflows/
+│ └── docker.yml
+│
+└── README.md
